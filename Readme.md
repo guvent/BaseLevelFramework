@@ -9,7 +9,9 @@ Engin Demiroğ hocamın sağladığı alttaki iki eğitimden destek alarak bir f
 * [100+ Saatlik Web Geliştirme (Web Development) Kampı | 2020](https://keepachangelog.com/en/1.0.0/)
 * [45+ Saatlik C# Kamp Kursu: Sıfırdan Sektörün Yükseklerine](https://keepachangelog.com/en/1.0.0/)
 
+
 ---
+
 ## 100+ Saatlik Web Geliştirme (Web Development) Kampı | 2020
 
 ✔ Bölüm 55: ASP.NET Ön Koşul : C#
