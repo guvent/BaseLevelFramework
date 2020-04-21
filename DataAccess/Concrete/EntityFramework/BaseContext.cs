@@ -22,12 +22,16 @@ namespace DataAccess.Concrete.EntityFramework
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<User> Users2 { get; set; }
+        public DbSet<UserRole> UserRoles { get; set; }
+        public DbSet<Role> Roles { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             // Mapping zorunlu değil elimizde bulunsun...
             modelBuilder.Configurations.Add(new ProductMap());
             modelBuilder.Configurations.Add(new CategoryMap());
+            modelBuilder.Configurations.Add(new UserMap());
         }
     }
 }

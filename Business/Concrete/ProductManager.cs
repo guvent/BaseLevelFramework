@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 using Business.Abstract;
 using Business.Utilities.ValidationRules.FluentValidation;
 using Common.Abstract.DataAccess;
 using Common.Aspects.Postsharp;
+using Common.Aspects.Postsharp.AuthorizationAspects;
 using Common.Aspects.Postsharp.CacheAspects;
 using Common.Aspects.Postsharp.FluentValidationAspects;
 using Common.Aspects.Postsharp.LogAspects;
+using Common.Aspects.Postsharp.PerformanceAspects;
 using Common.Aspects.Postsharp.TransActionAspectScope;
 using Common.CrossCuttingConcerns.Caching.Microsoft;
 using Common.CrossCuttingConcerns.Logging.Log4Net.Loggers;
@@ -17,6 +20,7 @@ using Entities.Concrete;
 
 namespace Business.Concrete
 {
+    [LogAspect(typeof(DatabaseLogger))]
     // Cache için de Aspect Oriented gerekiyor ....
     public class ProductManager : IProductService
     {
@@ -42,8 +46,13 @@ namespace Business.Concrete
         [CacheAspect(typeof(MemoryCaching))]
         [LogAspect(typeof(DatabaseLogger))]
         [LogAspect(typeof(FileLogger))]
+        [PerformanceCounterAspect(3)]
+        [SecuredOperation(Roles = "Admin,Editor")]
         public List<Product> GetAll()
         {
+            // Performans sayacı testi...
+            //Thread.Sleep(6000);
+
             return _productDal.GetList();
         }
 
@@ -68,6 +77,7 @@ namespace Business.Concrete
 
         // Postsharp tercih edilmedi aspect oriented için çözüm uygulanmalı
         [TransActionAspectScope]
+        [FluentValidatorAspect(typeof(ProductValidator))]
         public void TransactionalOperation(Product product1, Product product2)
         {
             _productDal.Add(product1);

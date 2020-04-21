@@ -22,18 +22,18 @@ namespace Business.Utilities.DependencyResolvers.Ninject
             // EntityFramework
             Bind<IProductService>().To<ProductManager>().InSingletonScope();
             Bind<IProductDal>().To<EfProductDal>().InSingletonScope();
-            
-            Bind<DbContext>().To<BaseContext>();
 
+            Bind<IUserDal>().To<EfUserDal>().InSingletonScope();
+            Bind<IUserService>().To<UserManager>().InSingletonScope();
+
+            // EF or NH switch.....
+            Bind<DbContext>().To<BaseContext>();
             
             // NHibernate
-            //Bind<IProductDal>().To<NhProductDal>().InSingletonScope();
-
+            Bind(typeof(IQueryableRepository<>)).To(typeof(EfQueryableRepository<>));
             Bind<NHibernateHelper>().To<SqlServerHelper>();
 
-            // NHibernate Queryable ile çalışmak istenilirse...
-            Bind(typeof(IQueryableRepository<>)).To(typeof(EfQueryableRepository<>));
-
+            //Bind<IProductDal>().To<NhProductDal>().InSingletonScope();
         }
     }
 }

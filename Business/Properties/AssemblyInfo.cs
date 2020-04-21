@@ -1,6 +1,10 @@
 ﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using Common.Aspects.Postsharp.ExceptionAspects;
+using Common.Aspects.Postsharp.LogAspects;
+using Common.Aspects.Postsharp.PerformanceAspects;
+using Common.CrossCuttingConcerns.Logging.Log4Net.Loggers;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
@@ -13,6 +17,11 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
+
+// Aspects .....
+[assembly: LogAspect(typeof(DatabaseLogger),AttributeTargetTypes = "Business.Concrete.*")]
+[assembly: ExceptionLogAspect(typeof(DatabaseLogger),AttributeTargetTypes = "Business.Concrete.*")]
+[assembly: PerformanceCounterAspect(10,AttributeTargetTypes = "Business.Concrete.*")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
 // to COM components.  If you need to access a type in this assembly from

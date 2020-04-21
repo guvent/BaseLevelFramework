@@ -109,29 +109,29 @@ Dependency Injection Yapılandırması
 ✔ Bölüm 60: Profesyonel Backend 3 : Log4Net
 İmplementasyonları
 
-Bölüm 61: Profesyonel Backend 3 : Log Aspectlerinin
+✔ Bölüm 61: Profesyonel Backend 3 : Log Aspectlerinin
 Yazımı
 
-Bölüm 62: Profesyonel Backend 3 : Log4Net
+✔ Bölüm 62: Profesyonel Backend 3 : Log4Net
 Konfigurasyonu
 
-Bölüm 63: Profesyonel Backend 3 : Loglama Tablosu
+✔ Bölüm 63: Profesyonel Backend 3 : Loglama Tablosu
 Tasırımı
 
-Bölüm 64: Profesyonel Backend 3 : MVC Framework
+✔ Bölüm 64: Profesyonel Backend 3 : MVC Framework
 Entegrasyonu İçin İlk Adımlar
 
-Bölüm 65: Profesyonel Backend 3 : Assembly Seviyesinde
+✔ Bölüm 65: Profesyonel Backend 3 : Assembly Seviyesinde
 Loglama
 
-Bölüm 66: Profesyonel Backend 3 : Caching Testi
+✔ Bölüm 66: Profesyonel Backend 3 : Caching Testi
 
-Bölüm 67: Profesyonel Backend 3 : Transaction Testi
+✔ Bölüm 67: Profesyonel Backend 3 : Transaction Testi
 
-Bölüm 68: Profesyonel Backend 3 : Hataların
+✔ Bölüm 68: Profesyonel Backend 3 : Hataların
 Yakalanması ve Loglanması
 
-Bölüm 69: Profesyonel Backend 3 : Performans Yönetimi
+✔ Bölüm 69: Profesyonel Backend 3 : Performans Yönetimi
 
 Bölüm 70: Profesyonel Backend 4 : Introduction
 

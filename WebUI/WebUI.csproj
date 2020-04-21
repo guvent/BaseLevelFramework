@@ -133,6 +133,8 @@
     <Content Include="log4net.config" />
     <None Include="packages.config" />
     <Content Include="Views\Product\Index.cshtml" />
+    <Content Include="Views\Product\Add.cshtml" />
+    <Content Include="Views\Product\Add2.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

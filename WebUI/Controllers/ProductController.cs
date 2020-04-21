@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Entities.Concrete;
 
 namespace WebUI.Controllers
 {
@@ -24,6 +25,38 @@ namespace WebUI.Controllers
                 Product = _producService.GetAll()
             };
             return View(model);
+        }
+
+        public ActionResult Add()
+        {
+            _producService.Add(new Product
+            {
+                CategoryId = 1,
+                ProductName = "Deneme",
+                QuantityPerUnit = "1",
+                UnitPrice = 21
+            });
+
+            return View();
+        }
+
+        public ActionResult Add2()
+        {
+            _producService.TransactionalOperation(new Product
+            {
+                CategoryId = 1,
+                ProductName = "KALEM",
+                QuantityPerUnit = "1",
+                UnitPrice = 21
+            }, new Product
+            {
+                CategoryId = 1,
+                ProductName = "KALEM 2",
+                QuantityPerUnit = "1",
+                UnitPrice = 11
+            });
+
+            return View();
         }
     }
 }
