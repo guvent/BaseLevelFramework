@@ -42,9 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\ICategoryDal.cs" />
+    <Compile Include="Abstract\IMemberDal.cs" />
     <Compile Include="Abstract\IProductDal.cs" />
     <Compile Include="Abstract\IUserDal.cs" />
     <Compile Include="Concrete\Category.cs" />
+    <Compile Include="Concrete\Member.cs" />
     <Compile Include="Concrete\Product.cs" />
     <Compile Include="Concrete\Role.cs" />
     <Compile Include="Concrete\UserRole.cs" />

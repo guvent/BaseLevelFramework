@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "77105c08-5e0b-490f-a240-2d7cb2ecb3ae",
+		"name": "baselevel framework",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "products",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Z3V2ZW46MTIzNA==",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:55882/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "55882",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

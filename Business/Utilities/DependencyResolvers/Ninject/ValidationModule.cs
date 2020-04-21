@@ -13,6 +13,7 @@ namespace Business.Utilities.DependencyResolvers.Ninject
         public override void Load()
         {
             Bind<IValidator<Product>>().To<ProductValidator>().InSingletonScope();
+            Bind<IValidator<Member>>().To<MemberValidator>().InSingletonScope();
         }
     }
 }

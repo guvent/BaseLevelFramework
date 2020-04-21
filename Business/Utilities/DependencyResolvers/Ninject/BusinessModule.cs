@@ -4,6 +4,7 @@ using System.Data.Entity;
 using System.Text;
 using Business.Abstract;
 using Business.Concrete;
+using Business.MicroServices.KPSService;
 using Common.Abstract.DataAccess;
 using Common.Concrete.EntityFramework;
 using Common.Concrete.NHibernate;
@@ -25,6 +26,11 @@ namespace Business.Utilities.DependencyResolvers.Ninject
 
             Bind<IUserDal>().To<EfUserDal>().InSingletonScope();
             Bind<IUserService>().To<UserManager>().InSingletonScope();
+
+            Bind<IMemberDal>().To<EfMemberDal>().InSingletonScope();
+            Bind<IMemberService>().To<MemberManager>().InSingletonScope();
+
+            Bind<IKPSService>().To<KPSServiceAdapter>().InSingletonScope();
 
             // EF or NH switch.....
             Bind<DbContext>().To<BaseContext>();

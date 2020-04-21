@@ -74,15 +74,19 @@
   <ItemGroup>
     <Compile Include="Concrete\EntityFramework\BaseContext.cs" />
     <Compile Include="Concrete\EntityFramework\EfCategoryDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfMemberDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfProductDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfUserDal.cs" />
     <Compile Include="Concrete\EntityFramework\Mappings\CategoryMap.cs" />
+    <Compile Include="Concrete\EntityFramework\Mappings\MemberMap.cs" />
     <Compile Include="Concrete\EntityFramework\Mappings\ProductMap.cs" />
     <Compile Include="Concrete\EntityFramework\Mappings\UserMap.cs" />
     <Compile Include="Concrete\NHibernate\Helpers\SqlServerHelper.cs" />
     <Compile Include="Concrete\NHibernate\Mappings\CategoryMap.cs" />
+    <Compile Include="Concrete\NHibernate\Mappings\MemberMap.cs" />
     <Compile Include="Concrete\NHibernate\Mappings\ProductMap.cs" />
     <Compile Include="Concrete\NHibernate\NhCategoryDal.cs" />
+    <Compile Include="Concrete\NHibernate\NhMemberDal.cs" />
     <Compile Include="Concrete\NHibernate\NhProductDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

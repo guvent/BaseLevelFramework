@@ -173,31 +173,31 @@ Altyapı İmplementasyonu
 ✔ Bölüm 84: Profesyonel Backend 5 : Angular 4
 İmplementasyonu
 
-Bölüm 85: Profesyonel Backend 6 : Giriş
+✔ Bölüm 85: Profesyonel Backend 6 : Giriş
 
-Bölüm 86: Profesyonel Backend 6 : Katmanların
+✔ Bölüm 86: Profesyonel Backend 6 : Katmanların
 Oluşturulması
 
-Bölüm 87: Profesyonel Backend 6 : MicroService
+✔ Bölüm 87: Profesyonel Backend 6 : MicroService
 Mimarisi İmplementasyonu
 
-Bölüm 88: Profesyonel Backend 6 : Aspect
+✔ Bölüm 88: Profesyonel Backend 6 : Aspect
 İmplementasyonu
 
-Bölüm 89: Profesyonel Backend 6 : IoC Container
+✔ Bölüm 89: Profesyonel Backend 6 : IoC Container
 İmplementasyonu
 
-Bölüm 90: Profesyonel Backend 6 : İş Kuralı Yazımı
+✔ Bölüm 90: Profesyonel Backend 6 : İş Kuralı Yazımı
 
-Bölüm 91: Profesyonel Backend 6 : Anti-Spaghetti
+✔ Bölüm 91: Profesyonel Backend 6 : Anti-Spaghetti
 Refactoring İmplementasyonu
 
-Bölüm 92: Profesyonel Backend 6 : Console UI
+✔ Bölüm 92: Profesyonel Backend 6 : Console UI
 İmplementasyonu
 
-Bölüm 93: Profesyonel Backend 6 : ASP.NET MVC
+✔ Bölüm 93: Profesyonel Backend 6 : ASP.NET MVC
 İmplementasyonu
 
-Bölüm 94: Profesyonel Backend 6 : Custom Exception
+✔ Bölüm 94: Profesyonel Backend 6 : Custom Exception
 Filter
 
