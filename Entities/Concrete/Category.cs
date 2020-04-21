@@ -7,7 +7,7 @@ namespace Entities.Concrete
 {
     public class Category:IEntity
     {
-        public virtual int CategoryId { get; set; }
+        public virtual int CategoryID { get; set; }
         public virtual string CategoryName { get; set; }
     }
 }

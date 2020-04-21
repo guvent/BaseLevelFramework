@@ -11,7 +11,7 @@ namespace DataAccess.Concrete.EntityFramework.Mappings
         public CategoryMap()
         {
             ToTable(@"Categories", @"dbo");
-            HasKey(x => x.CategoryId);
+            HasKey(x => x.CategoryID);
 
             Property(x => x.CategoryName).HasColumnName(@"CategoryName");
         }

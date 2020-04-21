@@ -10,38 +10,16 @@ namespace WebUI.Controllers
 {
     public class HomeController : Controller
     {
-        private IUserService _userService;
-
-        public HomeController(IUserService userService)
-        {
-            _userService = userService;
-        }
-
         // GET: Default
         public ActionResult Index()
         {
-         //   return View();
-         return Redirect("/product");
+            //   return View();
+            return Redirect("/product");
         }
 
-        public string Login()
+        public ActionResult Login()
         {
-            var user = _userService.GetUser("guven", "1234");
-            if (user != null)
-            {
-                AuthenticationHelper.CreateAuthCookie(
-                    new Guid(),
-                    user.UserName,
-                    user.Email,
-                    DateTime.Now.AddDays(1),
-                    _userService.GetUserRoleItems(user).Select(u=>u.RoleName).ToArray(),
-                    false,
-                    user.FirstName,
-                    user.LastName
-                );
-                return "Login Success";
-            }
-            return "Login Fail!";
+            return Redirect("/auth/login");
         }
     }
 }

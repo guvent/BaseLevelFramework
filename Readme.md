@@ -133,44 +133,44 @@ Yakalanması ve Loglanması
 
 ✔ Bölüm 69: Profesyonel Backend 3 : Performans Yönetimi
 
-Bölüm 70: Profesyonel Backend 4 : Introduction
+✔ Bölüm 70: Profesyonel Backend 4 : Introduction
 
-Bölüm 71: Profesyonel Backend 4 : Veritabanı Tasarımı
+✔ Bölüm 71: Profesyonel Backend 4 : Veritabanı Tasarımı
 
-Bölüm 72: Profesyonel Backend 4 : Secured Operation
+✔ Bölüm 72: Profesyonel Backend 4 : Secured Operation
 Aspectinin Yazımı
 
-Bölüm 73: Profesyonel Backend 4 : Best Practices
+✔ Bölüm 73: Profesyonel Backend 4 : Best Practices
 
-Bölüm 74: Profesyonel Backend 4 : Test
+✔ Bölüm 74: Profesyonel Backend 4 : Test
 
-Bölüm 75: Profesyonel Backend 4 : Custom Identity
+✔ Bölüm 75: Profesyonel Backend 4 : Custom identity
 İmplementasyonu
 
-Bölüm 76: Profesyonel Backend 4 : Authentication Ticket
+✔ Bölüm 76: Profesyonel Backend 4 : Authentication Ticket
 İmplementasyonu
 
-Bölüm 77: Profesyonel Backend 4 : ASP.NET MVC
+✔ Bölüm 77: Profesyonel Backend 4 : ASP.NET MVC
 İmplementasyonu
 
-Bölüm 78: Profesyonel Backend 5 : Introduction
+✔ Bölüm 78: Profesyonel Backend 5 : Introduction
 
-Bölüm 79: Profesyonel Backend 5 : Web Api
+✔ Bölüm 79: Profesyonel Backend 5 : Web Api
 İmplementasyonuna Giriş
 
-Bölüm 80: Profesyonel Backend 5 : AutoMapper
+✔ Bölüm 80: Profesyonel Backend 5 : AutoMapper
 İmplementasyonu
 
-Bölüm 81: Profesyonel Backend 5 : AutoMapper,WebApi
+✔ Bölüm 81: Profesyonel Backend 5 : AutoMapper,WebApi
 ve MVC İmplementasyonu
 
-Bölüm 82: Profesyonel Backend 5 : Web Api Rol Bazlı
+✔ Bölüm 82: Profesyonel Backend 5 : Web Api Rol Bazlı
 Altyapı İmplementasyonu
 
-Bölüm 83: Profesyonel Backend 5 : WCF
+✔ Bölüm 83: Profesyonel Backend 5 : WCF
 İmplementasyonu
 
-Bölüm 84: Profesyonel Backend 5 : Angular 4
+✔ Bölüm 84: Profesyonel Backend 5 : Angular 4
 İmplementasyonu
 
 Bölüm 85: Profesyonel Backend 6 : Giriş

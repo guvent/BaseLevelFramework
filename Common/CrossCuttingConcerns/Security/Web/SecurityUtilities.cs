@@ -9,11 +9,11 @@ namespace Common.CrossCuttingConcerns.Security.Web
 {
     public class SecurityUtilities
     {
-        public Identity FormsAuthTicketToIdentity(FormsAuthenticationTicket ticket)
+        public identity FormsAuthTicketToidentity(FormsAuthenticationTicket ticket)
         {
-            var identity = new Identity
+            var identity = new identity
             {
-                Id = SetId(ticket),
+                Id = Setid(ticket),
                 Name = SetName(ticket),
                 Email = SetEmail(ticket),
                 Roles = SetRoles(ticket),
@@ -66,7 +66,7 @@ namespace Common.CrossCuttingConcerns.Security.Web
             return ticket.Name;
         }
 
-        private Guid SetId(FormsAuthenticationTicket ticket)
+        private Guid Setid(FormsAuthenticationTicket ticket)
         {
             string[] data = ticket.UserData.Split('|');
             return new Guid(data[4]);

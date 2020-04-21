@@ -31,7 +31,7 @@ namespace WebUI.Controllers
         {
             _producService.Add(new Product
             {
-                CategoryId = 1,
+                CategoryID = 1,
                 ProductName = "Deneme",
                 QuantityPerUnit = "1",
                 UnitPrice = 21
@@ -44,13 +44,13 @@ namespace WebUI.Controllers
         {
             _producService.TransactionalOperation(new Product
             {
-                CategoryId = 1,
+                CategoryID = 1,
                 ProductName = "KALEM",
                 QuantityPerUnit = "1",
                 UnitPrice = 21
             }, new Product
             {
-                CategoryId = 1,
+                CategoryID = 1,
                 ProductName = "KALEM 2",
                 QuantityPerUnit = "1",
                 UnitPrice = 11

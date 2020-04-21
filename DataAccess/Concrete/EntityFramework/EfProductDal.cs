@@ -18,10 +18,10 @@ namespace DataAccess.Concrete.EntityFramework
             using (BaseContext context= new BaseContext())
             {
                 var result = from p in context.Products
-                    join c in context.Categories on p.CategoryId equals c.CategoryId
+                    join c in context.Categories on p.CategoryID equals c.CategoryID
                     select new ProductDetail
                     {
-                        ProductId = p.ProductId,
+                        ProductID= p.ProductID,
                         ProductName = p.ProductName,
                         CategoryName = c.CategoryName
                     };

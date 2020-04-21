@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Common.CrossCuttingConcerns.Security
 {
-    public class Identity:IIdentity
+    public class identity:IIdentity
     {
         public string Name { get; set; }
         public string AuthenticationType { get; set; }

@@ -11,10 +11,10 @@ namespace DataAccess.Concrete.EntityFramework.Mappings
         public ProductMap()
         {
             ToTable(@"Products", @"dbo");
-            HasKey(x => x.ProductId);
+            HasKey(x => x.ProductID);
 
-            Property(x => x.ProductId).HasColumnName(@"ProductId");
-            Property(x => x.CategoryId).HasColumnName(@"CategoryId");
+            Property(x => x.ProductID).HasColumnName(@"ProductID");
+            Property(x => x.CategoryID).HasColumnName(@"CategoryID");
             Property(x => x.ProductName).HasColumnName(@"ProductName");
             Property(x => x.QuantityPerUnit).HasColumnName(@"QuantityPerUnit");
             Property(x => x.UnitPrice).HasColumnName(@"UnitPrice");

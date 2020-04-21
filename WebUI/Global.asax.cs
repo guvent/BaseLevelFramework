@@ -20,7 +20,10 @@ namespace WebUI
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
 
-            ControllerBuilder.Current.SetControllerFactory(new NinjectControllerFactory(new BusinessModule()));
+            //ControllerBuilder.Current.SetControllerFactory(new NinjectControllerFactory(new BusinessModule(),new AutoMapperModule()));
+
+            // Wcf Servis tabanlý çalýþmasý için...
+            ControllerBuilder.Current.SetControllerFactory(new NinjectControllerFactory(new ServiceModule(),new AutoMapperModule()));
         }
 
         public override void Init()
@@ -41,7 +44,7 @@ namespace WebUI
 
                 var ticket = FormsAuthentication.Decrypt(encTicket);
                 var securityUtilities = new SecurityUtilities();
-                var identity = securityUtilities.FormsAuthTicketToIdentity(ticket);
+                var identity = securityUtilities.FormsAuthTicketToidentity(ticket);
                 var principal = new GenericPrincipal(identity, identity.Roles);
 
                 HttpContext.Current.User = principal;

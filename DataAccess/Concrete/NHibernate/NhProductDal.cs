@@ -22,10 +22,10 @@ namespace DataAccess.Concrete.NHibernate
             using (var session = _nHibernateHelper.OpenSession())
             {
                 var result = from p in session.Query<Product>()
-                    join c in session.Query<Category>() on p.CategoryId equals c.CategoryId
+                    join c in session.Query<Category>() on p.CategoryID equals c.CategoryID
                     select new ProductDetail
                     {
-                        ProductId = p.ProductId,
+                        ProductID = p.ProductID,
                         ProductName = p.ProductName,
                         CategoryName = c.CategoryName
                     };

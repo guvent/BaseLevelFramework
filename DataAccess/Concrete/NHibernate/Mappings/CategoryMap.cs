@@ -13,7 +13,7 @@ namespace DataAccess.Concrete.NHibernate.Mappings
             Table(@"Categories");
             LazyLoad();
 
-            Id(x => x.CategoryId).Column("CategoryID");
+            Id(x => x.CategoryID).Column("CategoryID");
 
             Map(x => x.CategoryName).Column("CategoryName");
 
